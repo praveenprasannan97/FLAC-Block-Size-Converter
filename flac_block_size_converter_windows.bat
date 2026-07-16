@@ -25,6 +25,9 @@ for %%F in (*.flac) do (
 
     set "NAME=%%~nF"
 
+    :: Remove old temp files
+    del /q "temp\*" >nul 2>&1
+
     :: Export tags
     metaflac --export-tags-to="temp\tags.txt" "%%F"
 

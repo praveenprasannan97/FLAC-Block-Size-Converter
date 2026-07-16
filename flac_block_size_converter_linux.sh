@@ -21,6 +21,8 @@ for file in *.flac; do
     echo "Processing: $file"
     echo
 
+    # Remove old temp files
+    rm -f temp/tags.txt temp/cover.jpg temp/cover_resized.jpg
 
     # Export tags
     metaflac --export-tags-to=temp/tags.txt "$file"
