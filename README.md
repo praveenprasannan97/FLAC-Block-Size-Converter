@@ -135,7 +135,7 @@ Audio Files
 Make the flac_block_size_converter_linux.sh file executable, open terminal in the folder
   
 ```bash
-flac_block_size_converter_linux.sh
+chmod +x ./flac_block_size_converter_linux.sh
 ```
   
 ### Run the converter
